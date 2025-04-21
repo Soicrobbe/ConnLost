@@ -50,3 +50,76 @@ body, html {
     100% { transform: rotate(360deg); }
   }
   
+  .language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  .lang-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .lang-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .lang-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    min-width: 180px;
+    z-index: 999;
+  }
+  
+  .lang-menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .lang-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .flag {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .language-dropdown:hover .lang-menu {
+    display: block;
+  }
+
+  select {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    width: 250px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35 55l35 35 35-35' stroke='%23007bff' stroke-width='15' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #0056b3;
+  }
