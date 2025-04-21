@@ -24,7 +24,7 @@ function showSpinnerThenButton() {
         window.location.href = 'language.html';
       });
     }
-  }, 2500);
+  }, 500);
 }
 
 // Initial setup
