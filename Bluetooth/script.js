@@ -6,11 +6,11 @@ function showSpinnerThenButton() {
   actionArea.innerHTML = '<div class="spinner"></div>';
 
   setTimeout(() => {
-    let html = '<button id="retry-button">Retry</button>';
+    let html = '<button id="retry-button">RETRY</button>';
 
     // Show "Proceed without connecting" if retry was done at least once
     if (hasRetriedOnce || !hasRetriedOnce) {
-      html += '<br><br><button id="proceed-button">Proceed without connecting</button>';
+      html += '<br><br><button id="proceed-button">PROCEED WITHOUT CONNECTING</button>';
     }
 
     hasRetriedOnce = true; // Ensure it gets shown from now on
@@ -26,7 +26,7 @@ function showSpinnerThenButton() {
         window.location.href = 'language.html';
       });
     }
-  }, 500);
+  }, 750);
 }
 
 // Initial setup

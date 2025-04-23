@@ -9,7 +9,7 @@ function showSpinnerThenButton() {
     actionArea.innerHTML = '<button id="retry-button">Retry</button>';
     // Re-attach the event listener
     document.getElementById('retry-button').addEventListener('click', showSpinnerThenButton);
-  }, 500); // You can change 2500 to 2000 or 3000 for different durations
+  }, 750); // You can change 2500 to 2000 or 3000 for different durations
 }
 
 // Attach initial event listener
