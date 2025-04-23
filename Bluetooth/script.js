@@ -1,4 +1,5 @@
 const actionArea = document.getElementById('action-area');
+const connEcho = document.getElementById('connectEcho')
 let hasRetriedOnce = false;
 
 function showSpinnerThenButton() {
@@ -15,6 +16,7 @@ function showSpinnerThenButton() {
     hasRetriedOnce = true; // Ensure it gets shown from now on
 
     actionArea.innerHTML = html;
+    connEcho.innerHTML = "Connection to Echo Failed";
 
     document.getElementById('retry-button').addEventListener('click', showSpinnerThenButton);
 
